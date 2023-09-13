@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: bisque;
+    background-color: rgb(255, 228, 196);
 }
 
 #header {
@@ -36,7 +36,7 @@ body {
     display: inline-block;
     padding: 30px 75px;
     background-color: black;
-    color: white;
+    color: #fff;
     text-decoration: none;
     margin: 4px;
     transition: background-color 0.3s;
