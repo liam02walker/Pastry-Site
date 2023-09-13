@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./showList.js"></script>
     <title>Powerful Pastry</title>
 </head>
 
@@ -12,6 +13,7 @@
     <div id="header">
         <img id="logo" src="Images/logo.jpeg">
         <h1>POWERFUL PASTRY</h1>
+        <h2><script src="username.js"></script></h2>
         <div id="nav-buttons">
             <a class="nav-button" href="index.html">HOME</a>
             <a class="nav-button" href="page1.html">PAGE 1</a>
@@ -98,8 +100,8 @@
                             <li>50g Demerara sugar</li>
                             <li>Apricot jam for glazing</li>
                         </ul>
-                        <h3>Method</h3>
-                        <ol>
+                        <button onclick="showTheList()"><h3>Method</h3></button>
+                        <ol id="methodList" style="display:none">
                             <li>Preheat oven to 200°C (180°C for fan assisted ovens)/Gas Mark 6.</li>
                             <li>Unroll pastry onto a floured work surface and use a 20cm plate as a template. Cut away
                                 the
@@ -140,6 +142,8 @@
     <footer>
         &copy; Powerful Pastries 2023
     </footer>
+
+    <script src="./bgColor.js"></script>
 </body>
 
 </html>
