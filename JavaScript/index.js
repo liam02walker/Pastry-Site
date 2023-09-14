@@ -18,6 +18,9 @@ function askName() {
     
     if (username) {
         document.write("Hello " + username)
+    } else {
+        alert("Please enter a name!");
+        askName()
     }
 }
 
@@ -32,7 +35,7 @@ function ShowAndHide() {
 
 function ShowAndHide2() {
     let leftList = document.getElementById("methodList2");
-    
+
     if (leftList.style.display == "none") {
         leftList.style.display = "block";
     } else {
