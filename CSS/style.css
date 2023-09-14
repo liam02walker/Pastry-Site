@@ -22,6 +22,27 @@ body {
     font-size: 100px;
 }
 
+#calc {
+    text-align: center;
+}
+
+#calcMath {
+    padding-top: 5px;
+}
+
+#displayInput {
+    background-color: black;
+    width: 200px;
+    height: 100px;
+    margin-left: 40%;
+    margin-bottom: 50px;
+}
+
+#displayText {
+    color: #fff;
+    padding-top: 35px;
+}
+
 #logo {
     max-width: 250px;
 }
@@ -105,6 +126,14 @@ body {
 #hideList:hover {
     background-color: rgb(70, 70, 70);
     transform: scale(1.10);
+}
+
+#changingEmoji {
+    text-align: center;
+}
+
+#emojiButtons {
+    margin: 10px;
 }
 
 footer {

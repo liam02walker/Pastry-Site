@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JavaScript/page1.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <div id="header">
         <img id="logo" src="./Images/logo.jpeg">
@@ -17,6 +20,38 @@
             <a class="nav-button" href="./page3.html">PAGE 3</a>
         </div>
     </div>
-        <h3 class="heading3">Nothing Here!</h3>
+    <h3 class="heading3">Calculator</h3>
+    <div id="calc">
+        <div id="displayInput">
+            <h2 id="displayText">Example</h2>
+        </div>
+        <div id="calcNumbers">
+            <button onclick="changeP()">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>0</button>
+        </div>
+        <div id="calcMath">
+            <button>+</button>
+            <button>-</button>
+            <button>*</button>
+            <button>/</button>
+        </div>
+    </div>
+
+    <div id="changingEmoji">
+        <div id="emojiButtons">
+            <button id="clickEmoji" onclick="happyEmoji()">HAPPY</button>
+            <button id="clickEmoji" onclick="sadEmoji()">SAD</button>
+        </div>
+        <img id="changeEmoji" src="">
+    </div>
 </body>
+
 </html>
