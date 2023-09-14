@@ -4,24 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="./showList.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JavaScript/index.js"></script>
     <title>Powerful Pastry</title>
 </head>
 
 <body>
     <div id="header">
-        <img id="logo" src="Images/logo.jpeg">
+        <img id="logo" src="./Images/logo.jpeg">
         <h1>POWERFUL PASTRY</h1>
-        <h2><script src="username.js"></script></h2>
+        <h2>
+            <script>
+                askName();
+            </script>
+        </h2>
         <div id="nav-buttons">
-            <a class="nav-button" href="index.html">HOME</a>
-            <a class="nav-button" href="page1.html">PAGE 1</a>
-            <a class="nav-button" href="page2.html">PAGE 2</a>
-            <a class="nav-button" href="page3.html">PAGE 3</a>
+            <a class="nav-button" href="./index.html">HOME</a>
+            <a class="nav-button" href="./page1.html">PAGE 1</a>
+            <a class="nav-button" href="./page2.html">PAGE 2</a>
+            <a class="nav-button" href="./page3.html">PAGE 3</a>
         </div>
     </div>
     <main>
+        <script>
+            bgChange();
+        </script>
         <div id="container">
             <div class="left">
                 <h2>Puff Pastry Pizza</h2>
@@ -50,39 +57,46 @@
                             <li>3-4 slices Parma Ham</li>
                             <li>25 g parmesan, shaved</li>
                         </ul>
-                        <h3>Method</h3>
-                        <ol>
-                            <li>Preheat the oven to 180°C/gas mark 4</li>
-                            <li>Heat the passata in a saucepan and simmer until thickened and reduced by half. Season to
-                                taste
-                                with salt and pepper, and leave to cool</li>
-                            <li>Cut each sheet of pastry in half (so that you have four rectangles) and use a knife to
-                                score a
-                                border around each piece, about 1cm from the edge</li>
-                            <li>Transfer the pastry sheets to lined baking trays and spread 2 tablespoons of the tomato
-                                sauce
-                                over each base and sprinkle over some of the grated mozzarella</li>
-                            <li>For the margherita topping, arrange the tomato slices over one of the bases</li>
-                            <li>For the veggie pizza, take the second base and scatter the sliced pepper, courgette,
-                                mushrooms
-                                and tomatoes</li>
-                            <li>For the cured meat pizza, arrange slices of the chorizo, salami and olives over the
-                                third base
-                            </li>
-                            <li>Leave the fourth base with just the sauce and mozzarella, as the toppings will be added
-                                after it
-                                is baked</li>
-                            <li>Cook for 30 to 35 minutes until the bases are golden and crisp</li>
-                            <li>Top the plain fourth pizza with rocket leaves, slices of the Parma ham and parmesan
-                                shavings
-                            </li>
-                            <li>Scatter some fresh basil leaves over the margherita pizza and drizzle them all with a
-                                little
-                                olive oil to serve</li>
-                        </ol>
+                        <button id="hideList" onclick="ShowAndHide2()">
+                            <h3>Method</h3>
+                        </button>
+                            <ol id="methodList2" style="display:none">
+                                <li>Preheat the oven to 180°C/gas mark 4</li>
+                                <li>Heat the passata in a saucepan and simmer until thickened and reduced by half.
+                                    Season to
+                                    taste
+                                    with salt and pepper, and leave to cool</li>
+                                <li>Cut each sheet of pastry in half (so that you have four rectangles) and use a knife
+                                    to
+                                    score a
+                                    border around each piece, about 1cm from the edge</li>
+                                <li>Transfer the pastry sheets to lined baking trays and spread 2 tablespoons of the
+                                    tomato
+                                    sauce
+                                    over each base and sprinkle over some of the grated mozzarella</li>
+                                <li>For the margherita topping, arrange the tomato slices over one of the bases</li>
+                                <li>For the veggie pizza, take the second base and scatter the sliced pepper, courgette,
+                                    mushrooms
+                                    and tomatoes</li>
+                                <li>For the cured meat pizza, arrange slices of the chorizo, salami and olives over the
+                                    third base
+                                </li>
+                                <li>Leave the fourth base with just the sauce and mozzarella, as the toppings will be
+                                    added
+                                    after it
+                                    is baked</li>
+                                <li>Cook for 30 to 35 minutes until the bases are golden and crisp</li>
+                                <li>Top the plain fourth pizza with rocket leaves, slices of the Parma ham and parmesan
+                                    shavings
+                                </li>
+                                <li>Scatter some fresh basil leaves over the margherita pizza and drizzle them all with
+                                    a
+                                    little
+                                    olive oil to serve</li>
+                            </ol>
                     </div>
                     <div class="recipe-image">
-                        <img src="Images/puff-pastry.jpeg">
+                        <img src="./Images/puff-pastry.jpeg">
                     </div>
                 </div>
             </div>
@@ -100,7 +114,9 @@
                             <li>50g Demerara sugar</li>
                             <li>Apricot jam for glazing</li>
                         </ul>
-                        <button onclick="showTheList()"><h3>Method</h3></button>
+                        <button id="hideList" onclick="ShowAndHide()">
+                            <h3>Method</h3>
+                        </button>
                         <ol id="methodList" style="display:none">
                             <li>Preheat oven to 200°C (180°C for fan assisted ovens)/Gas Mark 6.</li>
                             <li>Unroll pastry onto a floured work surface and use a 20cm plate as a template. Cut away
@@ -130,7 +146,7 @@
                         </ol>
                     </div>
                     <div class="recipe-image">
-                        <img src="Images/peach-tart.jpeg">
+                        <img src="./Images/peach-tart.jpeg">
                     </div>
                 </div>
             </div>
@@ -142,8 +158,6 @@
     <footer>
         &copy; Powerful Pastries 2023
     </footer>
-
-    <script src="./bgColor.js"></script>
 </body>
 
 </html>

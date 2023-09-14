@@ -92,6 +92,21 @@ body {
     width: 48%;
 }
 
+#hideList {
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    margin: 4px;
+    transition: background-color 0.3s;
+    transition: transform 1s;
+    border-radius: 5px;
+}
+
+#hideList:hover {
+    background-color: rgb(70, 70, 70);
+    transform: scale(1.10);
+}
+
 footer {
     text-align: center;
     font-size: 25px;
