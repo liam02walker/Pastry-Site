@@ -23,11 +23,3 @@ function calcNumbers(calc1, calc2, math) {
 function changeP() {
     document.getElementById("displayText").innerHTML = "Hello World!";
 }
-
-function happyEmoji() {
-    document.getElementById("changeEmoji").src = "./Images/smile.jpeg"
-}
-
-function sadEmoji() {
-    document.getElementById("changeEmoji").src = "./Images/sad.jpeg"
-}

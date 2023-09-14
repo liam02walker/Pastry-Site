@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JavaScript/page2.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <div id="header">
         <img id="logo" src="./Images/logo.jpeg">
@@ -18,5 +21,20 @@
         </div>
     </div>
     <h3 class="heading3">What are you looking for exactly?</h3>
+
+    <div id="date">
+        <button id="dateChanger" onclick="setDate()">
+            DATE
+        </button>
+    </div>
+
+    <div id="changingEmoji">
+        <div id="emojiButtons">
+            <button id="clickEmoji" onclick="happyEmoji()">HAPPY</button>
+            <button id="clickEmoji" onclick="sadEmoji()">SAD</button>
+        </div>
+        <img id="changeEmoji" src="">
+    </div>
 </body>
+
 </html>
