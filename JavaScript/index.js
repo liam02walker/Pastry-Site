@@ -48,7 +48,7 @@ function rateMe() {
 
     if (stars <= 5 & stars > 0) {
         for (let i = 0; i < stars; i++) {
-            document.write("<img id='starsImg' src='./../Images/star.png'/>")
+            document.write("<img id='starsImg' src='../Pastry-Site/Images/star.png'/>")
         }
     } else if (stars > 5) {
         alert("I said 1-5.. but thanks for the high number :D")
