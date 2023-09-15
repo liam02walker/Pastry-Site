@@ -46,7 +46,12 @@ function ShowAndHide2() {
 function rateMe() {
     let stars = prompt("Rate me from 1-5", "5");
 
-    for (let i = 0; i < stars; i++) {
-        document.write("<img id='starsImg' src='../Images/star.png'/>")
+    if (stars <= 5 && stars > 0) {
+        for (let i = 0; i < stars; i++) {
+            document.write("<img id='starsImg' src='../Images/star.png'/>")
+        }
+    } else {
+        alert("I said 1-5...")
+        rateMe()
     }
 }
