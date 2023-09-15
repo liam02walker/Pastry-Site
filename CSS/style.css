@@ -11,6 +11,11 @@ body {
     position: relative;
 }
 
+#starsImg {
+    max-width: 50px;
+    max-height: 50px;
+}
+
 #header h1 {
     padding-left: 50px;
     width: 400px;

@@ -42,3 +42,11 @@ function ShowAndHide2() {
         leftList.style.display = "none";
     }
 }
+
+function rateMe() {
+    let stars = prompt("Rate me from 1-5", "5");
+
+    for (let i = 0; i < stars; i++) {
+        document.write("<img id='starsImg' src='../Images/star.png'/>")
+    }
+}
