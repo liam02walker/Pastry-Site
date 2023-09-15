@@ -3,7 +3,7 @@ function bgChange() {
 
     if (time <= 11 & time >= 0) {
         document.body.style.backgroundColor = "#FFDCC4";
-    } else if (time <=17 & time >= 0) {
+    } else if (time <= 17 & time >= 0) {
         document.body.style.backgroundColor = "#E5A67A";
     } else if (time <= 23 & time >= 0) {
         document.body.style.backgroundColor = "#A1653B";
@@ -15,7 +15,7 @@ function bgChange() {
 
 function askName() {
     let username = prompt("What is your name?")
-    
+
     if (username) {
         document.write("Hello " + username)
     } else {
@@ -46,15 +46,11 @@ function ShowAndHide2() {
 function rateMe() {
     let stars = prompt("Rate me from 1-5", "5");
 
-    if (stars <= 5 & stars > 0) {
-        for (let i = 0; i < stars; i++) {
-            document.write("<img id='starsImg' src='./star.png'/>")
-        }
-    } else if (stars > 5) {
-        alert("I said 1-5.. but thanks for the high number :D")
-        rateMe()
-    } else {
-        alert("I said 1-5...")
-        rateMe()
+    while (!(stars > 0 & stars <= 5)) {
+        stars = prompt("Not quite. Rate me 1-5");
+    }
+
+    for (let i = 0; i < stars; i++) {
+        document.write("<img id='starsImg' src='./star.png'/>");
     }
 }
